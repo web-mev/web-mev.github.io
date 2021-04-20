@@ -1,1 +1,15 @@
-site_name: My Docs
+site_name: WebMeV User Documentation
+site_description: User and how-to guide for WebMeV
+
+repo_url: https://github.com/web-mev/
+
+markdown_extensions:
+ - toc:
+    anchorlink: True
+ - admonition
+ - codehilite
+
+theme: readthedocs
+
+nav:
+ - Home: 'index.md'
