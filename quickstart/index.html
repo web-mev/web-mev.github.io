@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Quickstart - WebMeV User Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Quickstart";
+    var mkdocs_page_input_path = "quickstart.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> WebMeV User Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Quickstart</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#login">Login</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uploading-files">Uploading files</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assigning-file-types">Assigning file "types"</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#creating-a-workspace">Creating a workspace</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-data-to-your-workspace">Adding data to your workspace</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-analyses">Running analyses</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#viewing-results">Viewing results</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../file_management/">Managing files</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../reproducibility/">Reproducibility</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../rnaseq_case_study/">Case study: RNA-Seq</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">WebMeV User Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Quickstart</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/web-mev/edit/master/docs/quickstart.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="webmev-quickstart-guide"><a class="toclink" href="#webmev-quickstart-guide">WebMeV Quickstart Guide</a></h1>
+<p>This quickstart is not meant to be comprehensive, but simply to provide a brief introduction for those who would like to get started as soon as possible. For more details, see the corresponding pages in the side menu.</p>
+<h2 id="login"><a class="toclink" href="#login">Login</a></h2>
+<p>To better understand WebMeV usage and provide better security, we require that users register with WebMeV. You can do this using either your own email address or by using a Google account. If you register via email, we will send you a link to validate your account.</p>
+<h2 id="uploading-files"><a class="toclink" href="#uploading-files">Uploading files</a></h2>
+<p>To run an analysis, you obviously need to have data to work with. You may either upload data from your local machine or by using our Dropbox uploader (Fig 1.)</p>
+<p>If available, you can also create data from a number of public data sources we provide.</p>
+<h2 id="assigning-file-types"><a class="toclink" href="#assigning-file-types">Assigning file "types"</a></h2>
+<p>We need to know what types of files we are dealing with. Each analysis type expects files in a particular format and we can better control for errors if we assign "types" to each file and validate their format <em>before</em> using them in any analyses.</p>
+<p>After uploading your file(s), the file manager will prompt you to select the file type. Upon selection, WebMeV will attempt to parse and validate your file to confirm that it can be used for downstream analyses. The file manager page has a guide to help understand each file type, but you can also see these types <a href="../file_types/#xyz">here</a>.</p>
+<p>Note that we attempt to provide useful instructions if your file does not validate, but we cannot anticipate the many things that can go wrong in formatting files. If you believe there is an error, please let us know!</p>
+<h2 id="creating-a-workspace"><a class="toclink" href="#creating-a-workspace">Creating a workspace</a></h2>
+<p>To help with managing and organizing multiple types of analyses, we allow users to create "workspaces". All your analysis is performed within the context of a workspace. While you are not required to use more than one workspace, we encourage users to separate different types of analyses if they concern fundamentally different data. For example, one workspace might contain analyses related to an RNA-seq experiment performed on a cell-line while another workspace might contain analyses pertaining to an unrelated patient-derived xenograft mouse experiment. </p>
+<h2 id="adding-data-to-your-workspace"><a class="toclink" href="#adding-data-to-your-workspace">Adding data to your workspace</a></h2>
+<p>Workspaces are initially empty. You can then "import" files to one or more workspaces to use in analysis. Even if you have uploaded all your files, you cannot use them until they have been validated and added to your workspace.</p>
+<h2 id="running-analyses"><a class="toclink" href="#running-analyses">Running analyses</a></h2>
+<p>Under the "tools" tab, you will find a list of available analyses grouped by their general "type". For instance, the differential expression menu contains several common packages for performing a differential expression analysis.</p>
+<p><strong>Common pitfall- no options for a given input</strong></p>
+<p>Each analysis input is restricted to an expected type and the available options are based on that expectation. For example, if we are attempting to run a differential expression analysis, one required input is a "count matrix" (also called an expression matrix). Accordingly, the options for such an input will be populated with a list of files in your workspace which have a "file type" appropriate for this input. </p>
+<p>If you do not see any input options for a given field, you likely have to perform another action first. For instance, to execute a pathway analysis (e.g. GSEA), you first need an ordered list of genes (typically ranked by a measure of their differential expression). If you attempt to run a GSEA analysis right away, you will most likely notice that the dropdown menu for the input file is empty. Hence, you either need to first upload a file with the proper format <em>or</em> (most likely) run a differential expression analysis first.</p>
+<p>Similarly, some analyses (such as differential expression analysis) require you to provide two groups of samples/observations to compare. Therefore, you must first create these two groups, either through a clustering analysis or by annotating your samples (e.g. telling WebMeV which samples are "experimental" and which should be considered as a "control" group).</p>
+<h2 id="viewing-results"><a class="toclink" href="#viewing-results">Viewing results</a></h2>
+<p>After requesting an analysis, your job will be queued and executed in a (hopefully!) timely manner. Depending on the size of your dataset and the requested analysis, this can be relatively quick (e.g. under 10 seconds) or take significantly longer (minutes, hours).</p>
+<p>WebMeV will periodically check the state of your job and report back with the status (i.e. running, finishing, preparing visualization). Unfortunately, we cannot provide fine-grained details on the progress (such as "75% complete").</p>
+<p>Once the job is complete, you can view the results by finding your "executed analysis" in the results menu. Most result pages will provide interactive visualizations or plots that will allow you to define interesting groups of samples, genes, and perform other actions. Most figures can be exported for download.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../file_management/" class="btn btn-neutral float-right" title="Managing files">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/web-mev/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../file_management/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

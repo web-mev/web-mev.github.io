@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Managing files - WebMeV User Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Managing files";
+    var mkdocs_page_input_path = "file_management.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> WebMeV User Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../quickstart/">Quickstart</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Managing files</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#file-uploads">File uploads</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#file-types-and-extensions">File "types" and extensions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#previewing-files">Previewing files</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#removing-files">Removing files</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#renaming-files">Renaming files</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../reproducibility/">Reproducibility</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../rnaseq_case_study/">Case study: RNA-Seq</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">WebMeV User Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Managing files</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/web-mev/edit/master/docs/file_management.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="file-management-in-webmev"><a class="toclink" href="#file-management-in-webmev">File management in WebMeV</a></h1>
+<h2 id="file-uploads"><a class="toclink" href="#file-uploads">File uploads</a></h2>
+<p>To upload your data...</p>
+<p><strong>About file names</strong></p>
+<p>Note that we try to be flexible about how files are named, but we generally advocate for "simple" names without spaces and/or special characters <em>other than</em> dashes ("-") or underscores ("_"). Special characters can cause unexpected issues when attempting to read files and/or use them for analyses.</p>
+<p>To be clear, we permit files to have spaces within their names, but we ultimately convert the names within WebMeV to avoid any downstream problems. So do not be surprised if you see that your uploaded file has a <em>slightly</em> different name in the file manager.</p>
+<p>Some pitfalls to avoid:
+- Avoid files that start with numbers or other characters (e.g. "2A.tsv"). We will reject those outright.</p>
+<h2 id="file-types-and-extensions"><a class="toclink" href="#file-types-and-extensions">File "types" and extensions</a></h2>
+<p>To run analysis operations, we need to be able to parse the input files. To do that in a predictable and reproducible way, we need to know what types of files we are dealing with. Each analysis type expects files in a particular format and we can better control for errors if we assign "types" to each file and validate their format <em>before</em> attempting to use them in any analyses.</p>
+<p>After uploading your file(s), the file manager will prompt you to select the file type. Upon selection, WebMeV will attempt to parse and validate your file to confirm that it can be used for downstream analyses. The file manager page has a guide to help understand each file type and what they mean, but you can also see these types <a href="../file_types/#type_explanations">here</a>. It is not feasible to validate large sequencing files, so certain file types bypass any pre-validation.</p>
+<p>The file extension (e.g. "tsv" in "myFile.tsv") serves as a clue for the format of the data and how we attempt to parse it. We note that a file's format is different than its "type"; whereas the "type" refers to <em>what it represents</em> (e.g. an expression matrix, a BED file, etc.), the file's format refers to <em>how</em> the data is stored. An example is the extension of "csv" (<code>myFile.csv</code>), which signals that each column is separated/delimited with a comma. There is no "official" guide to this, but we follow conventional nomenclature. See <a href="../file_types/#format_extensions">here</a> for a list of the formats/extensions we support. If the format does not match the extension (e.g. a tab-delimited file named as "myFile.csv"), this will <em>often</em> result in parsing errors and warnings, but this is not always the case. Thus, it is important that you preview your files (if available) in WebMeV to see that they have been interpreted correctly.</p>
+<p>Finally, we make note that some common bioinformatics file types implicitly enforce a particular format and extension. An example is a BED-format file. These are required to be saved in a tab-delimited format and we further require that the file extension is set to "bed" (e.g. myBedFile.bed). Again, these formats are simply conventions to simplify bioinformatics workflows and communication, but we strictly enforce this within WebMeV.</p>
+<p>Note that we attempt to provide useful instructions if your file does not validate, but we cannot anticipate the many things that can go wrong in formatting files. If you believe there is an error, please let us know!</p>
+<h2 id="previewing-files"><a class="toclink" href="#previewing-files">Previewing files</a></h2>
+<p>To check that your file was uploaded and parsed correctly, you can click on the "preview" icon (the eyeball) to see a portion of your file. If, for instance, your count matrix does not appear as a "sensible" looking table of numbers, then this is a clue that something has gone wrong. Generally, plain-text files are best, but we also accept Excel files. Note, however, that auto-formatting within Excel has been implicated in <em>many</em> errors in the bioinformatics field (https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-5-80)</p>
+<h2 id="removing-files"><a class="toclink" href="#removing-files">Removing files</a></h2>
+<p>To preserve the fidelity of your workspace, we do not allow you to delete files which are part of a workspace. To fully delete a file, you must first remove it from all workspaces. A list of the current workspaces is provided in the file manager table.</p>
+<p>One important caveat of all this is that you <strong>cannot delete a file which has been used for an analysis</strong>. This includes <em>inputs</em> and <em>outputs</em> of analyses. For example, if you used a file containing differential expression results to execute a GSEA pathway analysis, you can't remove that input file. To do so would "break" your analysis flow since we would no longer have any record of a file required to fully recreate your analysis workflow. </p>
+<p>Hence, you can only delete files which have not been used in any workspaces and further are not attached to any workspaces.</p>
+<h2 id="renaming-files"><a class="toclink" href="#renaming-files">Renaming files</a></h2>
+<p>By default, many analyses will name your files automatically. If you wish to simplify these names, you may rename them in the file manager/editor. <em>It is up to you</em> to keep these names distinct and memorable. The analyses track these files by unique identifiers, so the human-assigned name is primarily used as a cue for the user.</p>
+<p>Note that the file extension (e.g. "tsv" in "myfile.tsv") is often used as a "clue" for how to parse the file. Changing that extension can lead to unexpected behavior, so we advise against altering the extension. Generally, we try to catch these sorts of errors, but it is a challenge to anticipate the many things that can go wrong.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../workspaces/" class="btn btn-neutral float-right" title="Workspaces">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../quickstart/" class="btn btn-neutral" title="Quickstart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/web-mev/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../quickstart/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../workspaces/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
