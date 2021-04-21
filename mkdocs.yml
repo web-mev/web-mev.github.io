@@ -13,3 +13,8 @@ theme: readthedocs
 
 nav:
  - Home: 'index.md'
+ - Quickstart: 'quickstart.md'
+ - Managing files: 'file_management.md'
+ - Workspaces: 'workspaces.md'
+ - Reproducibility: 'reproducibility.md'
+ - "Case study: RNA-Seq": 'rnaseq_case_study.md' 
