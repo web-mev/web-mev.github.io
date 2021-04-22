@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../css/theme.css" />
   <link rel="stylesheet" href="../css/theme_extra.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../extra.css" rel="stylesheet" />
   
   <script>
     // Current page data
@@ -120,7 +121,8 @@
               
                 <h1 id="file-management-in-webmev"><a class="toclink" href="#file-management-in-webmev">File management in WebMeV</a></h1>
 <h2 id="file-uploads"><a class="toclink" href="#file-uploads">File uploads</a></h2>
-<p>To upload your data...</p>
+<p>To upload your data, you can choose to upload data from your local machine or from Dropbox. Local uploads are best for smaller files like prepared count matrices or other files smaller than 500MB. If you attempt to upload files larger than our limit (which may change), the upload will be prevented with a warning message.</p>
+<p>If you are trying to load sequence data (which can be multiple GB), we only allow uploads via Dropbox. This prevents many large uploads from consuming bandwidth on the WebMeV server.</p>
 <p><strong>About file names</strong></p>
 <p>Note that we try to be flexible about how files are named, but we generally advocate for "simple" names without spaces and/or special characters <em>other than</em> dashes ("-") or underscores ("_"). Special characters can cause unexpected issues when attempting to read files and/or use them for analyses.</p>
 <p>To be clear, we permit files to have spaces within their names, but we ultimately convert the names within WebMeV to avoid any downstream problems. So do not be surprised if you see that your uploaded file has a <em>slightly</em> different name in the file manager.</p>
