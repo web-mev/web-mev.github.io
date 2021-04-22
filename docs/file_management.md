@@ -2,7 +2,9 @@
 
 ## File uploads
 
-To upload your data...
+To upload your data, you can choose to upload data from your local machine or from Dropbox. Local uploads are best for smaller files like prepared count matrices or other files smaller than 500MB. If you attempt to upload files larger than our limit (which may change), the upload will be prevented with a warning message.
+
+If you are trying to load sequence data (which can be multiple GB), we only allow uploads via Dropbox. This prevents many large uploads from consuming bandwidth on the WebMeV server.
 
 **About file names**
 

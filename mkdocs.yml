@@ -10,7 +10,7 @@ markdown_extensions:
  - codehilite
 
 theme: readthedocs
-
+extra_css: [extra.css]
 nav:
  - Home: 'index.md'
  - Quickstart: 'quickstart.md'
