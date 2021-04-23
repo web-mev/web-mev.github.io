@@ -81,7 +81,15 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../analyses/">Running analyses</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../reproducibility/">Reproducibility</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../export/">Analysis export</a>
                     </li>
                 </ul>
                 <ul>
@@ -128,11 +136,11 @@
 <h2 id="login"><a class="toclink" href="#login">Login</a></h2>
 <p>To better understand WebMeV usage and provide better security, we require that users register with WebMeV. You can do this using either your own email address or by using a Google account. If you register via email, we will send you a link to validate your account.</p>
 <h2 id="uploading-files"><a class="toclink" href="#uploading-files">Uploading files</a></h2>
-<p>To run an analysis, you obviously need to have data to work with. You may either upload data from your local machine or by using our Dropbox uploader (Fig 1.)</p>
+<p>To run an analysis, you obviously need to have data to work with. You may either upload data from your local machine or by using our Dropbox uploader.</p>
 <p>If available, you can also create data from a number of public data sources we provide.</p>
 <h2 id="assigning-file-types"><a class="toclink" href="#assigning-file-types">Assigning file "types"</a></h2>
 <p>We need to know what types of files we are dealing with. Each analysis type expects files in a particular format and we can better control for errors if we assign "types" to each file and validate their format <em>before</em> using them in any analyses.</p>
-<p>After uploading your file(s), the file manager will prompt you to select the file type. Upon selection, WebMeV will attempt to parse and validate your file to confirm that it can be used for downstream analyses. The file manager page has a guide to help understand each file type, but you can also see these types <a href="../file_types/#xyz">here</a>.</p>
+<p>After uploading your file(s), the file manager will prompt you to select the file type. Upon selection, WebMeV will attempt to parse and validate your file to confirm that it can be used for downstream analyses. The file manager page has a guide to help understand each file type, but you can also see these types <a href="../file_types/#type_explanations">here</a>.</p>
 <p>Note that we attempt to provide useful instructions if your file does not validate, but we cannot anticipate the many things that can go wrong in formatting files. If you believe there is an error, please let us know!</p>
 <h2 id="creating-a-workspace"><a class="toclink" href="#creating-a-workspace">Creating a workspace</a></h2>
 <p>To help with managing and organizing multiple types of analyses, we allow users to create "workspaces". All your analysis is performed within the context of a workspace. While you are not required to use more than one workspace, we encourage users to separate different types of analyses if they concern fundamentally different data. For example, one workspace might contain analyses related to an RNA-seq experiment performed on a cell-line while another workspace might contain analyses pertaining to an unrelated patient-derived xenograft mouse experiment. </p>
