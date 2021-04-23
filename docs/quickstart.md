@@ -8,7 +8,7 @@ To better understand WebMeV usage and provide better security, we require that u
 
 ## Uploading files
 
-To run an analysis, you obviously need to have data to work with. You may either upload data from your local machine or by using our Dropbox uploader (Fig 1.)
+To run an analysis, you obviously need to have data to work with. You may either upload data from your local machine or by using our Dropbox uploader.
 
 If available, you can also create data from a number of public data sources we provide.
 
@@ -16,7 +16,7 @@ If available, you can also create data from a number of public data sources we p
 
 We need to know what types of files we are dealing with. Each analysis type expects files in a particular format and we can better control for errors if we assign "types" to each file and validate their format *before* using them in any analyses.
 
-After uploading your file(s), the file manager will prompt you to select the file type. Upon selection, WebMeV will attempt to parse and validate your file to confirm that it can be used for downstream analyses. The file manager page has a guide to help understand each file type, but you can also see these types [here](file_types.md#xyz).
+After uploading your file(s), the file manager will prompt you to select the file type. Upon selection, WebMeV will attempt to parse and validate your file to confirm that it can be used for downstream analyses. The file manager page has a guide to help understand each file type, but you can also see these types [here](file_types.md#type_explanations).
 
 Note that we attempt to provide useful instructions if your file does not validate, but we cannot anticipate the many things that can go wrong in formatting files. If you believe there is an error, please let us know!
 

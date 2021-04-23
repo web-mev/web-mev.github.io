@@ -16,5 +16,7 @@ nav:
  - Quickstart: 'quickstart.md'
  - Managing files: 'file_management.md'
  - Workspaces: 'workspaces.md'
+ - Running analyses: 'analyses.md'
  - Reproducibility: 'reproducibility.md'
+ - Analysis export: 'export.md'
  - "Case study: RNA-Seq": 'rnaseq_case_study.md' 
