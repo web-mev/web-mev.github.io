@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Analysis export - WebMeV User Documentation</title>
+  <title>Roadmap - WebMeV User Documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Analysis export";
-    var mkdocs_page_input_path = "export.md";
+    var mkdocs_page_name = "Roadmap";
+    var mkdocs_page_input_path = "roadmap.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -56,8 +56,10 @@
                     <li class="toctree-l1"><a class="reference internal" href="../quickstart/">Quickstart</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../roadmap/">Roadmap</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Roadmap</a>
+    <ul class="current">
+    </ul>
                     </li>
                 </ul>
                 <ul>
@@ -76,10 +78,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="../reproducibility/">Reproducibility</a>
                     </li>
                 </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Analysis export</a>
-    <ul class="current">
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../export/">Analysis export</a>
                     </li>
                 </ul>
                 <ul>
@@ -107,10 +107,10 @@
     
       
     
-    <li>Analysis export</li>
+    <li>Roadmap</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/web-mev/edit/master/docs/export.md"
+        <a href="https://github.com/web-mev/edit/master/docs/roadmap.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -121,11 +121,22 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="exporting-your-workspace-history"><a class="toclink" href="#exporting-your-workspace-history">Exporting your workspace history</a></h1>
-<p>To help get an overview of the analyses you have run, we offer a graphical view of your files and analyses under the "analysis flow" tab in the workspace. As an example:</p>
-<p><img alt="" src="../f33.png" /></p>
-<p>If you hover over the various icons, you can see the files that were input or output from each analysis task, represented by the "gear" icon. In this way, you can see how the various files were created and how everything came together. Clicking on the gear icons will take you to the results tab where you can view the result of that analysis.</p>
-<p>Finally, by exporting the workflow history, you will have a record of all your analysis versions, parameters, etc. necessary to recreate the same steps on a different dataset. This allows you to run fully reproducible, multi-step workflows at any point in the future. While the exported file is not particularly "human readable", it is useful for serving as a kind of receipt or full history of your analysis.</p>
+                <h1 id="webmev-development-roadmap"><a class="toclink" href="#webmev-development-roadmap">WebMeV Development Roadmap</a></h1>
+<p>WebMeV's architecture permits rapid development cycles, as new analyses can be developed (mostly) independently of our application. With the analysis code and environment specified, we require only a couple extra files to 
+include the new module into WebMeV.</p>
+<p>Short-term development plans (summer/fall 2021) include:</p>
+<ul>
+<li>
+<p>Inclusion of public data repositories (e.g. TCGA, TARGET) and a browsable public data interface</p>
+</li>
+<li>
+<p>Additional SCTK modules, including QC</p>
+</li>
+<li>
+<p>Network-medicine analyses such as those avaible in the Quackenbush lab's netZoo repositories <a href="https://github.com/netZoo">https://github.com/netZoo</a></p>
+</li>
+</ul>
+<p>...and, of course, bug fixes and improvements as needed!</p>
               
             </div>
           </div>
@@ -133,10 +144,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../rnaseq_case_study/" class="btn btn-neutral float-right" title="Case study: RNA-Seq">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../file_management/" class="btn btn-neutral float-right" title="Managing files">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../reproducibility/" class="btn btn-neutral" title="Reproducibility"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../quickstart/" class="btn btn-neutral" title="Quickstart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -164,10 +175,10 @@
           <a href="https://github.com/web-mev/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../reproducibility/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../quickstart/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../rnaseq_case_study/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../file_management/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
